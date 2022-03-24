@@ -4,7 +4,7 @@ import { VscMenu, VscSearch } from "react-icons/vsc";
 
 export const Navbar = () => {
     return (
-        <Box width="100wv" height={50} backgroundColor="whitesmoke">
+        <Box width="100wv"backgroundColor="whitesmoke">
             <Box display="flex" justifyContent="space-between" padding="20px" alignItems="center" >
                 <VscMenu fill="black" />
                 <Text> 16 de Febrero  </Text>
