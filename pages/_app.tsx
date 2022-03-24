@@ -1,5 +1,6 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import "reset-css";
+import { Navbar } from '../components/Navbar';
 
 const theme = extendTheme({
   colors: {
@@ -33,6 +34,7 @@ const theme = extendTheme({
 
 function MyApp({ Component, pageProps }) {
   return <ChakraProvider theme={theme}>
+      <Navbar/>
       <Component {...pageProps} />
   </ChakraProvider> 
 }
