@@ -13,7 +13,7 @@ export const BottomBar = () => {
         alignItems="center"
       >
         {icons.map((icon) => (
-          <BottomActionItem {...icon} />
+          <BottomActionItem key={`botton-bar-${icon.label}`} {...icon} />
         ))}
       </Box>
     </Box>
