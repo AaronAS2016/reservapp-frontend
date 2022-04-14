@@ -1,7 +1,7 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import "reset-css";
-import { BottomBar } from '../components/BottomBar';
-import { Navbar } from '../components/Navbar';
+import { BottomBar } from "../components/BottomBar";
+import { Navbar } from "../components/Navbar";
 
 const theme = extendTheme({
   colors: {
@@ -15,7 +15,7 @@ const theme = extendTheme({
       700: "#616161",
       800: "#424242",
       900: "#212121",
-    }
+    },
   },
   components: {
     Button: {
@@ -24,21 +24,21 @@ const theme = extendTheme({
           ":focus": {
             outline: "none",
             boxShadow: "none",
-          }
-        }
-      }
-    }
-  }
+          },
+        },
+      },
+    },
+  },
 });
 
-
-
-function MyApp({ Component, pageProps }) {
-  return <ChakraProvider theme={theme}>
-      <Navbar/>
-        <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <ChakraProvider theme={theme}>
+      <Navbar />
+      <Component {...pageProps} />
       <BottomBar />
-  </ChakraProvider> 
-}
+    </ChakraProvider>
+  );
+};
 
-export default MyApp
+export default MyApp;

@@ -7,6 +7,6 @@ export const ReservationIncoming = () => {
       borderRadius="15px"
       background="whatsapp.500"
       height="300px"
-    ></Box>
+    />
   );
 };
