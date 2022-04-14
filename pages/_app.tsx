@@ -36,7 +36,6 @@ const MyApp = ({ Component, pageProps }) => {
     <ChakraProvider theme={theme}>
       <Navbar />
       <Component {...pageProps} />
-      <BottomBar />
     </ChakraProvider>
   );
 };
